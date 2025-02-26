@@ -16,6 +16,8 @@ services:
 
   app:
     build: .
+    depends_on:
+      - db
     container_name: widget-server
     ports:
       - 3000:3333
